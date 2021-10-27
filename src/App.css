@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
+:root
+{
+  --default-size:2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.div_warning-size
+{
+  display:none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.form
+{
+  width:100%;
+  margin-bottom:.5rem;
+}
+
+.lbl
+{
+  margin-bottom:.5rem;
+}
+
+.lbl, .chb, .password, .info, .info_after_create_password
+{
+  display:flex;
+  font-weight:bold;
+  font-size:var(--default-size);
+}
+
+.button
+{
+  display:flex;
+  border-radius:10px;
+  background:blue;
+  font-size:var(--default-size);
+  color:white;
+  padding:20px;
+}
+
+.button[class~='copied']
+{
+  background:green;
+}
+
+.div_info, .div_copy-button, .div_create-button, .div_chb
+{
+  margin-top:10px;
+}
+
+#passwordLength, .div_chb, .div_create-button, .div_info, .lbl, .div_password
+{
+  margin-left:1rem;
+}
+
+@media(min-width:320px) and (max-width:767px)
+{
+  .lbl, .chb, .password, .info, .info_after_create_password
+  {
+    font-size:16pt;
+  }
+
+  .div_info, .div_copy-button, .div_create-button, .div_chb
+  {
+    margin-top:10px;
+  }
+
+  #passwordLength, .div_chb, .div_create-button, .div_info, .lbl, .div_password
+  {
+    margin-left:10%;
+  }
+
+  .button
+  {
+    font-size:16pt;
+    padding:15px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media(min-width:768px) and (max-width:1024px)
+{
+  .button
+  {
+    padding:15px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media(min-width:120px) and (max-width:319px)
+{
+  .lbl, .chb, .password, .info, .info_after_create_password
+  {
+    font-size:65%;
+  }
+
+  .div_info, .div_copy-button, .div_create-button, .div_chb
+  {
+    margin-top:5px;
+  }
+
+  #passwordLength, .div_chb, .div_create-button, .div_info, .lbl, .div_password
+  {
+    margin-left:5px;
+  }
+
+  .button
+  {
+    font-size:8pt;
+    padding:2%;
+  }
+}
+
+@media(max-width:119px)
+{
+  .form, .div_password, .div_alert
+  {
+    display:none;
+  }
+
+  .div_warning-size
+  {
+    display:flex;
+    padding-left:3px;
+    font-size:70%;
+    font-weight:bold;
   }
 }
