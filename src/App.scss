@@ -1,0 +1,145 @@
+$default-size:2rem;
+
+@mixin adaptive-text
+{
+  font-size:$default-size;
+  display:flex;
+  font-weight:bold;
+  
+  @media(min-width:320px) and (max-width:767px)
+  {
+    font-size:3vmax;
+  }
+
+  @media(min-width:120px) and (max-width:319px)
+  {
+    font-size:3vmax;
+  }
+}
+
+@mixin adaptive-btn
+{
+  display:flex;
+  border-radius:10px;
+  background:blue;
+  font-size:$default-size;
+  color:white;
+  padding:20px;
+
+  @media(min-width:320px) and (max-width:767px)
+  {
+    font-size:3vmax;
+    padding:15px;
+  }
+
+  @media(min-width:768px) and (max-width:1023px)
+  {
+    padding:15px;
+  }
+
+  @media(min-width:120px) and (max-width:319px)
+  {
+    font-size:3vmax;
+    padding:2%;
+  }
+}
+
+@mixin turn-warning
+{
+  display:none;
+
+  @media(max-width:119px)
+  {
+    display:flex;
+    padding-left:3px;
+    font-size:70%;
+    font-weight:bold;
+  }
+}
+
+@mixin turn-other
+{
+  @media(max-width:119px)
+  {
+    display:none;
+  }
+}
+
+/*mt: margin-top*/
+@mixin adaptive-mt
+{
+  margin-top:10px;
+
+  @media(min-width:320px) and (max-width:767px)
+  {
+    margin-top:10px;
+  }
+
+  @media(min-width:120px) and (max-width:319px)
+  {
+    margin-top:5px;
+  }
+}
+
+/*ml: margin-left*/
+@mixin adaptive-ml
+{
+  margin-left:1rem;
+
+  @media(min-width:320px) and (max-width:767px)
+  {
+    margin-left:10%;
+  }
+  
+  @media(min-width:120px) and (max-width:319px)
+  {
+    margin-left:5px;
+  }
+}
+
+.div_warning-size
+{
+  @include turn-warning;
+}
+
+.form
+{
+  width:100%;
+  margin-bottom:.5rem;
+}
+
+.form, .div_password, .div_alert
+{
+  @include turn-other;
+}
+
+.lbl
+{
+  margin-bottom:.5rem;
+}
+
+.lbl, .chb, .password, .info, .info_after_create_password
+{
+  @include adaptive-text;
+  
+}
+
+.button
+{
+  @include adaptive-btn;
+
+  &[class~='copied']
+  {
+    background:green;
+  }
+}
+
+.div_info, .div_copy-button, .div_create-button, .div_chb
+{
+  @include adaptive-mt;
+}
+
+#passwordLength, .div_chb, .div_create-button, .div_info, .lbl, .div_password
+{
+  @include adaptive-ml;
+}

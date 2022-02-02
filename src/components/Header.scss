@@ -1,0 +1,35 @@
+@mixin adaptive-header
+{
+	background:black;
+	color:white;
+	padding-left:1rem;
+	display:flex;
+	font-size:2rem;
+	font-weight:bold;
+	margin-bottom:1%;
+
+	@media(min-width:320px) and (max-width:767px)
+	{
+		font-size:3vmax;
+		margin-bottom:2%;
+	}
+
+	@media(min-width:69px) and (max-width:319px)
+	{
+		padding-left:4px;
+		font-size:3vmax;
+		margin-bottom:4px;
+	}
+
+	@media(min-width:50px) and (max-width:68px)
+	{
+		padding-left:2px;
+		font-size:60%;
+		margin-bottom:4px;
+	}
+}
+
+.appHeader
+{
+	@include adaptive-header;
+}

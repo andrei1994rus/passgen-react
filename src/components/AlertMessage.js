@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import {Alert} from 'react-bootstrap';
 
-import './AlertMessage.css';
+import './AlertMessage.scss';
 
 class AlertMessage extends Component
 {
