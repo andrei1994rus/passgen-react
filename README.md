@@ -17,8 +17,8 @@
 - ReactJS;
 - HTML;
 - JS;
-- CSS, CSS3;
-- Libraries: Bootstrap, React-Bootstrap, React Hook Form, React-Copy-To-Clipboard;
+- CSS, CSS3, SCSS;
+- Libraries: Bootstrap, React-Bootstrap, React Hook Form, React-Copy-To-Clipboard, node-saas (4.14.1);
 - Method: Desktop First.
 ---
 [URL](https://andrei1994rus.github.io/passgen-react/) .
