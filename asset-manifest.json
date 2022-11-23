@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/passgen-react/static/css/main.4ceb2e29.chunk.css",
+    "main.css": "/passgen-react/static/css/main.6174fd60.chunk.css",
     "main.js": "/passgen-react/static/js/main.fca59567.chunk.js",
     "main.js.map": "/passgen-react/static/js/main.fca59567.chunk.js.map",
     "runtime-main.js": "/passgen-react/static/js/runtime-main.e2438f00.js",
@@ -10,14 +10,14 @@
     "static/js/2.b1ca82f3.chunk.js.map": "/passgen-react/static/js/2.b1ca82f3.chunk.js.map",
     "index.html": "/passgen-react/index.html",
     "static/css/2.0a9ec390.chunk.css.map": "/passgen-react/static/css/2.0a9ec390.chunk.css.map",
-    "static/css/main.4ceb2e29.chunk.css.map": "/passgen-react/static/css/main.4ceb2e29.chunk.css.map",
+    "static/css/main.6174fd60.chunk.css.map": "/passgen-react/static/css/main.6174fd60.chunk.css.map",
     "static/js/2.b1ca82f3.chunk.js.LICENSE.txt": "/passgen-react/static/js/2.b1ca82f3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e2438f00.js",
     "static/css/2.0a9ec390.chunk.css",
     "static/js/2.b1ca82f3.chunk.js",
-    "static/css/main.4ceb2e29.chunk.css",
+    "static/css/main.6174fd60.chunk.css",
     "static/js/main.fca59567.chunk.js"
   ]
 }
